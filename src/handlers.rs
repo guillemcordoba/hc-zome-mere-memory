@@ -26,7 +26,7 @@ fn now() -> AppResult<u64> {
 }
 
 
-const BLOCK_SIZE : usize = 4_194_304; // 4MB
+const BLOCK_SIZE : usize = 100_000; // 100KB
 
 pub fn remember_bytes(bytes: &Vec<u8>) -> AppResult<EntryHash> {
     debug!("Creating entries for remembering ({} bytes)", bytes.len() );
